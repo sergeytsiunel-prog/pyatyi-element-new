@@ -1,0 +1,430 @@
+/* ----------- Базовые стили ----------- */
+body {
+  font-family: 'Montserrat', Arial, sans-serif;
+  background: #d6f8e3; /* Мятный фон для всего сайта */
+  color: #212b24;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 95%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 32px 0;
+}
+
+/* ----------- Заголовки ----------- */
+h1, h2, h3 {
+  font-weight: 700;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 2.2em;
+  line-height: 1.1;
+  color: #1a7c51;
+}
+
+h2 {
+  font-size: 1.4em;
+  color: #226f49;
+}
+
+h3 {
+  font-size: 1.05em;
+  color: #226f49;
+}
+
+/* ----------- HERO ----------- */
+.hero {
+  padding: 62px 0 45px 0;
+  background: linear-gradient(135deg, #fdffae 35%, #b5edc3 100%);
+  color: #226f49;
+  text-align: center;
+}
+
+.hero-content .highlight {
+  display: block;
+  font-size: 1.2em;
+  color: #ffd833;
+  margin: 0.6em 0 0.4em 0;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.subtitle {
+  font-size: 1.15em;
+  margin: 18px auto 28px auto;
+  color: #37775d;
+  max-width: 600px;
+}
+
+.cta-btn {
+  background: linear-gradient(90deg, #fdffae 40%, #72e67c 100%);
+  color: #245d3c;
+  font-size: 1em;
+  font-weight: 700;
+  padding: 13px 32px;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 4px 24px rgba(140,170,70,0.14);
+  border: none;
+  transition: background 0.15s;
+  margin-top: 22px;
+  display: inline-block;
+}
+
+.cta-btn:hover {
+  background: linear-gradient(90deg, #faef62 40%, #6cc98d 100%);
+}
+
+/* ----------- Блоки ----------- */
+.block {
+  background: #dffde7; /* Светло-мятный */
+  margin-bottom: 18px;
+  border-radius: 22px;
+  box-shadow: 0 2px 12px rgba(90,170,90,0.05);
+  padding: 0;
+}
+
+.block.alt {
+  background: linear-gradient(98deg, #e9ffe8 55%, #f4ffce 100%);
+  box-shadow: 0 2px 10px rgba(180,220,120,0.07);
+}
+
+.block .container {
+  padding: 32px 0 32px 0;
+}
+
+/* ----------- Story-section ----------- */
+.story-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  align-items: center;
+  justify-content: space-between;
+}
+.story-text {
+  flex: 2;
+}
+.signature {
+  font-style: italic;
+  color: #ffd833;
+  font-size: 1em;
+  margin-top: 14px;
+}
+.story-photo-placeholder {
+  flex: 1;
+  font-size: 3.5em;
+  color: #97e6ae;
+  background: #fdffae;
+  border-radius: 50%;
+  width: 82px;
+  height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 16px;
+}
+
+/* ----------- Кто я----------- */
+.who-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  align-items: center;
+}
+.who-text {
+  flex: 2;
+}
+.photo-placeholder {
+  flex: 1;
+  font-size: 3.5em;
+  color: #97e6ae;
+  background: #faef62;
+  border-radius: 50%;
+  width: 82px;
+  height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 16px;
+}
+
+/* ----------- Уникальность ----------- */
+.unique-list {
+  list-style: none;
+  margin: 16px 0 10px 0;
+  padding: 0;
+}
+.unique-list li {
+  padding: 0 0 12px 0;
+  font-size: 1.1em;
+  color: #226f49;
+}
+
+/* ----------- Практики ---------- */
+.practice-list {
+  list-style: disc inside;
+  margin: 18px 0 8px 0;
+  color: #37775d;
+}
+
+/* ----------- Cards ---------- */
+.cards {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.card {
+  background: #ecffd9;
+  border-radius: 18px;
+  box-shadow: 0 2px 14px rgba(80,200,110,0.08);
+  flex: 1 1 200px;
+  padding: 18px 18px;
+  margin-bottom: 16px;
+  min-width: 180px;
+}
+
+.program-cards .card {
+  background: #fdffae;
+}
+
+.results-cards .card {
+  background: #d6f8e3;
+}
+
+/* ---------- Compare table ---------- */
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 18px auto;
+  box-shadow: 0 2px 14px rgba(60,170,120,0.09);
+  font-size: 1em;
+  background: #fffda0;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.compare-table th, .compare-table td {
+  padding: 14px 9px;
+  text-align: left;
+  border-bottom: 1px solid #eefacf;
+}
+.compare-table th {
+  background: #77e997;
+  color: #1a7c51;
+  font-size: 1.08em;
+}
+
+/* ---------- Before After ---------- */
+.before-after {
+  display: flex;
+  gap: 32px;
+  margin-top: 20px;
+}
+.before, .after {
+  flex: 1 1 220px;
+  background: #fcfbbb;
+  border-radius: 14px;
+  padding: 18px 15px;
+}
+.before {
+  background: #fbd976;
+}
+.after {
+  background: #b1efc6;
+}
+
+/* ---------- Elements (diagnostics) ---------- */
+.elements {
+  display: flex;
+  gap: 20px;
+  margin-top: 14px;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.element-btn {
+  background: linear-gradient(90deg, #fcfbbb 60%, #97e6ae 100%);
+  color: #226f49;
+  font-weight: 600;
+  border: none;
+  border-radius: 16px;
+  padding: 12px 28px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-bottom: 8px;
+  transition: background 0.2s;
+}
+.element-btn.active, .element-btn:hover {
+  background: linear-gradient(90deg, #fdffae 40%, #72e67c 100%);
+  color: #fff;
+}
+
+/* ---------- Quiz ---------- */
+#quiz-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  background: #f6ffdb;
+  border-radius: 18px;
+  box-shadow: 0 2px 14px rgba(80,200,110,0.08);
+  padding: 24px 22px;
+  max-width: 480px;
+  margin: 18px auto 0 auto;
+}
+#quiz-form label {
+  font-weight: 500;
+  font-size: 1em;
+  margin-bottom: 0.5em;
+  color: #226f49;
+}
+#quiz-form input[type="range"] {
+  width: 130px;
+  margin-top: 6px;
+}
+#quiz-form select,
+#quiz-form input[type="text"] {
+  margin-top: 6px;
+  padding: 6px 10px;
+  font-size: 1em;
+  border-radius: 8px;
+  border: 1px solid #bfecc1;
+}
+
+#quiz-form button[type="submit"] {
+  background: linear-gradient(90deg, #fdffae 30%, #77e997 100%);
+  color: #266b41;
+  font-weight: 700;
+  border: none;
+  border-radius: 14px;
+  font-size: 1em;
+  padding: 12px 0;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s;
+}
+#quiz-form button[type="submit"]:hover {
+  background: linear-gradient(90deg, #faef62 50%, #7fd98c 100%);
+}
+
+.result {
+  font-weight: 500;
+  color: #238e4a;
+  min-height: 25px;
+  margin-top: 10px;
+  font-size: 1em;
+}
+
+/* ---------- FAQ ---------- */
+.faq {
+  margin: 28px 0 0 0;
+}
+.faq-item {
+  margin-bottom: 18px;
+  padding: 18px 16px;
+  border-radius: 16px;
+  background: #e7ffdc;
+  box-shadow: 0 2px 10px rgba(120,220,140,0.07);
+}
+.faq-item h3 {
+  color: #1a7c51;
+  font-size: 1em;
+  margin-bottom: 9px;
+  margin-top: 0;
+}
+
+/* ---------- Contacts ---------- */
+.contacts {
+  background: linear-gradient(90deg, #fcfbbb 20%, #b5edc3 100%);
+  text-align: center;
+  margin-top: 28px;
+  padding: 23px 0;
+}
+.contacts h2 {
+  color: #238e4a;
+}
+.contacts a {
+  color: #fdc927;
+  font-weight: 600;
+  text-decoration: none;
+}
+.contacts a:hover {
+  color: #256a43;
+  text-decoration: underline;
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  background: #f6ffdb;
+  color: #ffd833;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.96em;
+  margin-top: 9px;
+}
+
+/* ---------- Адаптация ---------- */
+@media (max-width: 900px) {
+  .cards, .before-after, .story-wrap, .who-wrap {
+    flex-direction: column !important;
+    gap: 18px !important;
+  }
+  .card {
+    min-width: 140px;
+    padding: 16px 10px;
+  }
+  .before, .after {
+    min-width: 120px;
+    padding: 14px 8px;
+  }
+  .story-photo-placeholder, .photo-placeholder {
+    margin: 0 auto 6px auto;
+    width: 62px;
+    height: 62px;
+    font-size: 2.2em;
+  }
+}
+
+@media (max-width: 600px) {
+  body, .block, .block.alt {
+    padding: 0;
+  }
+  .container {
+    padding: 14px 0;
+  }
+  h1 {
+    font-size: 1.07em;
+  }
+  h2 {
+    font-size: 1em;
+  }
+  .card, .before, .after, .faq-item {
+    padding: 11px 4px;
+  }
+  .cta-btn {
+    padding: 9px 10px;
+    font-size: 0.98em;
+  }
+  #quiz-form {
+    padding: 11px 6px;
+    max-width: 97vw;
+  }
+  .compare-table th, .compare-table td {
+    padding: 6px 2px;
+    font-size: 0.93em;
+  }
+}
+
+/* ---------- Scrollbar приятный ---------- */
+::-webkit-scrollbar {
+  width: 8px;
+  background: #d6f8e3;
+}
+::-webkit-scrollbar-thumb {
+  background: #b5edc3;
+  border-radius: 7px;
+}
