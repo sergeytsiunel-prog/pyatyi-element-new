@@ -428,3 +428,68 @@ h3 {
   background: #b5edc3;
   border-radius: 7px;
 }
+/* ----------- Карточки результаты и программа — оптимизация ----------- */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 14px;
+}
+.card {
+  background: #fff;
+  border-radius: 13px;
+  box-shadow: 0 2px 8px rgba(30,40,68,0.08), 0 1.5px 5px rgba(30,40,68,0.09);
+  padding: 18px 14px;
+  min-width: 180px;
+  max-width: 310px;
+  margin: 0 auto 14px auto;
+  transition: box-shadow 0.22s;
+}
+.program-cards .card {
+  background: #fdffae;
+}
+.results-cards .card {
+  background: #d6f8e3;
+}
+.card h3 {
+  font-size: 1.06em;
+  font-weight: 600;
+  margin-bottom: 7px;
+  color: #226f49;
+}
+.card p {
+  font-size: 0.98em;
+  line-height: 1.44;
+  color: #245d3c;
+}
+/* Hover-анимация для приятной тени */
+.card:hover {
+  box-shadow: 0 6px 18px rgba(39,84,30,0.19), 0 3px 12px rgba(30,40,68,0.14);
+}
+
+/* Медиазапрос — мобильная оптимизация */
+@media (max-width: 700px) {
+  .cards {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 4px;
+  }
+  .card {
+    min-width: 0;
+    max-width: 97vw;
+    width: 100%;
+    padding: 13px 7px;
+    border-radius: 10px;
+    font-size: 0.97em;
+    box-shadow: 0 1px 7px rgba(30,40,68,0.07);
+    margin-bottom: 8px;
+  }
+  .card h3 {
+    font-size: 0.98em;
+    margin-bottom: 5px;
+  }
+  .card p {
+    font-size: 0.92em;
+  }
+}
